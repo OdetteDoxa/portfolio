@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +30,33 @@ header p {
   color: #94a3b8;
 }
 
-/* NAVBAR */
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #94a3b8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* NAV */
 nav {
   background: #020617;
   padding: 10px;
@@ -45,7 +70,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 10px;
+  margin: 10px 15px;
 }
 
 nav a {
@@ -61,7 +86,7 @@ nav a:hover {
 
 /* SECTIONS */
 section {
-  padding: 40px 20px;
+  padding: 50px 20px;
   max-width: 1000px;
   margin: auto;
 }
@@ -71,17 +96,24 @@ h2 {
   color: #38bdf8;
 }
 
-/* PROJECTS */
+/* PROJECTS GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* PROJECT CARD */
 .project {
   background: #020617;
   padding: 20px;
-  margin-bottom: 20px;
   border-radius: 10px;
   transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
 .project:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 
 .project h3 {
@@ -99,14 +131,29 @@ h2 {
   text-decoration: underline;
 }
 
-/* LISTES */
-ul {
-  margin-left: 20px;
-  margin-top: 10px;
+/* TAGS */
+.tags span {
+  display: inline-block;
+  background: #38bdf8;
+  color: #020617;
+  padding: 4px 8px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: 0.75rem;
 }
 
-li {
-  margin-bottom: 5px;
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #020617;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #38bdf8;
 }
 
 /* CONTACT */
@@ -127,6 +174,10 @@ footer {
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
   }
 
   nav ul {

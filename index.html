@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Odette Gamamou - Développeuse Web Full-Stack</title>
 
   <meta name="description" content="Portfolio de Odette Gamamou, développeuse web full-stack spécialisée en intégration de solutions, API et applications web modernes.">
-  <meta name="keywords" content="développeuse web, full-stack, API, React, Node.js, Python, portfolio Montréal">
+  <meta name="keywords" content="développeuse web, full-stack, API, React, Node.js, Python">
   <meta name="author" content="Odette Gamamou">
 
   <link rel="stylesheet" href="style.css"/>
@@ -16,10 +17,18 @@
 <body>
 
 <header>
-  <h1>Odette Gamamou</h1>
-  <p>Développeuse Web Full-Stack | Intégration de Solutions</p>
+  <h1>Gnepou Odette Gamamou</h1>
+  <p>Développeuse Web Full-Stack</p>
 </header>
 
+<!-- HERO -->
+<section class="hero">
+  <h2>Je développe des applications web modernes</h2>
+  <p>Spécialisée en intégration, API et développement full-stack</p>
+  <a href="#projects" class="btn">Voir mes projets</a>
+</section>
+
+<!-- NAV -->
 <nav>
   <ul>
     <li><a href="#about">À propos</a></li>
@@ -30,84 +39,84 @@
   </ul>
 </nav>
 
+<!-- ABOUT -->
 <section id="about">
   <h2>À propos</h2>
   <p>
-    Diplômée en Techniques de l’informatique – Développement Web et mobile, je suis une développeuse full-stack spécialisée en intégration de solutions et développement d’applications web.
-    J’ai de l’expérience en conception d’API, gestion de bases de données et communication entre systèmes.
+    Diplômée en Techniques de l’informatique, je suis spécialisée dans le développement web full-stack, avec une forte expertise en intégration de solutions et en conception d’API.
   </p>
   <p>
-    Je m’intéresse particulièrement aux systèmes complexes, à la performance des applications et à la résolution de problèmes techniques.
+    J’aime travailler sur des systèmes complexes, optimiser la performance et construire des applications robustes et évolutives.
   </p>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <h2>Projets</h2>
 
-  <div class="project">
-    <h3>Système de recommandation (IA)</h3>
-    <p>
-      Application full-stack permettant de recommander des activités physiques en fonction des utilisateurs.
-    </p>
-    <ul>
-      <li>Développement et intégration frontend/backend</li>
-      <li>Conception d’API REST (Node.js, Python)</li>
-      <li>Gestion des données avec PostgreSQL et MongoDB</li>
-    </ul>
-    <p><strong>Technologies :</strong> React, Node.js, Python</p>
-    <a href="https://github.com/OdetteDoxa/WebAppFitnessAI">Voir le projet</a>
-  </div>
+  <div class="projects-grid">
 
-  <div class="project">
-    <h3>Application de covoiturage</h3>
-    <p>
-      Application web permettant de proposer et consulter des trajets.
-    </p>
-    <ul>
-      <li>Développement d’un tableau de bord interactif</li>
-      <li>Intégration avec backend via API</li>
-      <li>Gestion des flux de données utilisateurs</li>
-    </ul>
-    <p><strong>Technologies :</strong> React, Node.js</p>
-  </div>
+    <div class="project">
+      <h3>Système de recommandation (IA)</h3>
+      <div class="tags">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Python</span>
+      </div>
+      <p>Application intelligente recommandant des activités physiques.</p>
+      <a href="https://github.com/OdetteDoxa/WebAppFitnessAI">Voir le projet</a>
+    </div>
 
-  <div class="project">
-    <h3>Application de résumé intelligent</h3>
-    <p>
-      Application permettant de générer automatiquement des résumés de documents.
-    </p>
-    <ul>
-      <li>Traitement de données avec Python</li>
-      <li>Développement backend avec Flask</li>
-      <li>Tests et amélioration des fonctionnalités</li>
-    </ul>
-    <p><strong>Technologies :</strong> Python, Flask</p>
-    <a href="https://github.com/OdetteDoxa/NoteSynthese_Projet">Voir le projet</a>
-  </div>
+    <div class="project">
+      <h3>Application de covoiturage</h3>
+      <div class="tags">
+        <span>React</span>
+        <span>Node.js</span>
+      </div>
+      <p>Plateforme de gestion et consultation de trajets.</p>
+    </div>
 
+    <div class="project">
+      <h3>Résumé intelligent</h3>
+      <div class="tags">
+        <span>Python</span>
+        <span>Flask</span>
+      </div>
+      <p>Génération automatique de résumés de documents.</p>
+      <a href="https://github.com/OdetteDoxa/NoteSynthese_Projet">Voir le projet</a>
+    </div>
+
+  </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
   <h2>Compétences</h2>
-  <ul>
-    <li>JavaScript, Python</li>
-    <li>React.js, Node.js, Flask</li>
-    <li>API REST & intégration frontend/backend</li>
-    <li>PostgreSQL, MongoDB</li>
-    <li>Git, GitHub</li>
-    <li>Docker, Linux (WSL)</li>
-    <li>Tests, debugging, résolution de problèmes</li>
-  </ul>
+
+  <div class="skills">
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>Flask</span>
+    <span>API REST</span>
+    <span>PostgreSQL</span>
+    <span>MongoDB</span>
+    <span>Git</span>
+    <span>Docker</span>
+  </div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education">
   <h2>Formation</h2>
   <p>
-    DEC en Techniques de l’informatique – Développement Web et mobile  
+    DEC Techniques de l’informatique – Développement Web et mobile  
     <br>Institut Teccart, Montréal (2025)
   </p>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <h2>Contact</h2>
   <p>Email : g.odettegamamou@gmail.com</p>
@@ -116,7 +125,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Odette Gamamou</p>
+  <p>© 2026 Gnepou Odette Gamamou</p>
 </footer>
 
 </body>
